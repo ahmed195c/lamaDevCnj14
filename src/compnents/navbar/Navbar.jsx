@@ -1,15 +1,13 @@
-const NavBar = () => {
-    return(
+import Links from "@/compnents/navbar/links/Links"
+
+const Navbar = () => {
+    return (
         <>
-            <div className="bg-cyan-500">
-                <ul className="bg-red-600"> 
-                    <li>NavBaewrr</li>
-                    <li>Skrt</li>
-                    <li>Nbgfar</li>
-                </ul>
-            </div>
+        <div>
+            <Links / >
+        </div>
         </>
     )
 }
 
-export default NavBar
+export default Navbar

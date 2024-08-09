@@ -1,7 +1,12 @@
 const ContactPage = () => {
     return(
         <>
-        <div>ContactPage</div>
+            <h1>
+                this is the contcat page
+            </h1>
+            <div>
+                ContactPage
+            </div>
         </>
     )
 }
