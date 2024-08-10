@@ -1,13 +1,14 @@
 import Links from "@/compnents/navbar/links/Links"
 
+
 const Navbar = () => {
     return (
         <>
-        <div>
-            <Links / >
-        </div>
+            <div>
+                <Links />
+            </div>
         </>
     )
-}
+};
 
-export default Navbar
+export default Navbar;

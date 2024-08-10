@@ -1,4 +1,6 @@
 import Link from "next/link"
+import  styles from "../navbar.module.css"
+
 const Links = () => {
 
     const links = [
@@ -17,11 +19,12 @@ const Links = () => {
         },
     ]
     return (
-       <div className="navbar">
+       <div className={styles.links}>
            {links.map((link=> (
             <Link href={link.path} key={link.title}  >{link.title}</Link>
            ) ))}
        </div> 
     )
 }
+
 export default Links

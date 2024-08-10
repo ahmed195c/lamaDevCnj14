@@ -1,0 +1,10 @@
+.links{
+    width: 300px;
+    color: rgb(204, 206, 206);
+    border-radius: 4px ;
+    background-color: rgb(74, 74, 78);
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    padding: 15px;
+}

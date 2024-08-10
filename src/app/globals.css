@@ -3,18 +3,16 @@
 @tailwind utilities;
 
 
-.navbar{
-    color: azure;
-    border-radius: 4px ;
-    background-color: rgb(74, 74, 78);
-    display: flex;
-    justify-content: space-between;
-    max-width: 500px;
-    padding: 0.2rem;
-}
+
 
 .cont {
+    padding:  0 0 100px 0;
+    height: 100vh;
+    margin: auto;
+    width: 1536px;
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+    align-items: center;
+    justify-content: space-between;
+    background-color: brown;
 }
