@@ -1,7 +1,7 @@
 const AboutPage = () =>{
     return (
         <>
-        <div>AboutPage skrrrrrrt</div>
+        <div> AboutPage  </div>
         <button> <a href="/"> go back</a></button>
         </>
     )
