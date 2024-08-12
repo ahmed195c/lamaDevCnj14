@@ -1,9 +1,10 @@
-import Link from "next/link"
+"use client"
+
+import {useState} from "react"
 import  styles from "./links.module.css"
 import NavLink from "@/compnents/navbar/links//navLink/navLink"
 
 const Links = () => {
-
     const links = [
 
         {title:"Homepage",
@@ -20,26 +21,37 @@ const Links = () => {
         },
     ]
 
+    const [open,set0pen] = useState(false)
+
     const session = true
     const isAdmin = true
     return (
-       <div className={styles.links}>
+        <div className={styles.cont}>
+            <div className={styles.links}>
            {links.map((link=> (
-            <NavLink  item={link} key={link.title}  >{link.title}</NavLink>
-           )))}
-
-           {
+               <NavLink  item={link} key={link.title}  >{link.title}</NavLink>
+            )))}
+            {
                session ?(
-                <>
+                   <>
                 {isAdmin && 
                     <NavLink item={{ title:"Admin", path:"/admin"}} />}
-                    <button>Logout</button>
+                    <button className={styles.logout}>Logout</button>
                 </>
                 ) : (
                     <NavLink item={{title: "Login", path: "/login"}} />
-                
                 )}
-       </div>
+            </div>
+            <button onClick={()=> set0pen((prev) => !prev)}>Menu</button>
+            {
+                open && (
+
+                    <div className={styles.cont}>
+                    {links.map((link) => (<NavLink item={link} key={link.title} /> 
+                ))}
+                </div>
+            )}
+        </div>
     )
 }
 
