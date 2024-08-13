@@ -42,11 +42,11 @@ const Links = () => {
                     <NavLink item={{title: "Login", path: "/login"}} />
                 )}
             </div>
-            <button onClick={()=> set0pen((prev) => !prev)}>Menu</button>
+            <button className={styles.menuBtn} onClick={()=> set0pen((prev) => !prev)}>Menu</button>
             {
                 open && (
 
-                    <div className={styles.cont}>
+                    <div className={styles.mopile}>
                     {links.map((link) => (<NavLink item={link} key={link.title} /> 
                 ))}
                 </div>
